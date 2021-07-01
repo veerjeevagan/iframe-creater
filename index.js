@@ -4,7 +4,7 @@
     let urlStr = matchedStr[0].replace(/(iframe=|url=)/ , "");
     urlStr =urlStr.replace(/http/ , "https");
     const url = decodeURIComponent(urlStr);
-
+    console.log("url : " , url);
     //div element which holds iframe and button
     let mydiv = document.createElement("div");
     mydiv.id = "pluginMydiv";
